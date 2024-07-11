@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neil Leitner - Tennis Instructor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1515777315835-281b94c9589c') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #2e8b57;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            padding: 20px 0;
+        }
+        .media img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Neil Leitner</h1>
+        <p>Tennis Instructor</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#media">Media</a>
+        <a href="#signup">Sign Up</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I’m Neil Leitner, a passionate tennis instructor with over 10 years of experience in coaching players of all levels. I believe in a holistic approach to training that not only focuses on technique but also on physical and mental strength. My goal is to help you become the best player you can be while enjoying the game.</p>
+            <img src="https://images.unsplash.com/photo-1517960413843-0aee8e2d9a1e" alt="Neil Leitner Coaching">
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <ul>
+                <li>Private Tennis Lessons</li>
+                <li>Group Coaching Sessions</li>
+                <li>Junior Development Programs</li>
+                <li>Fitness and Conditioning Training</li>
+            </ul>
+            <p>Whether you are a beginner looking to learn the basics or an advanced player aiming to refine your skills, I offer personalized coaching tailored to your needs. My sessions are designed to be engaging, effective, and fun. Join me to take your game to the next level!</p>
+            <img src="https://images.unsplash.com/photo-1508253578933-a562abba0066" alt="Tennis Coaching Session">
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you’re interested in improving your tennis skills, feel free to reach out to me! You can contact me via the form below, and I’ll get back to you as soon as possible.</p>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <section id="media" class="media">
+            <h2>Media</h2>
+            <p>Check out some photos and videos from my coaching sessions and tournaments.</p>
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="Tennis Court">
+            <img src="https://images.unsplash.com/photo-1524578271613-bf3f9d0f3652" alt="Tennis Match">
+            <img src="https://images.unsplash.com/photo-1549351236-caca0f174515" alt="Tennis Practice">
+        </section>
+        <section id="signup">
+            <h2>Sign Up</h2>
+            <p>Sign up for my tennis coaching sessions. Fill out the form below to register.</p>
+            <form action="https://formspree.io/f/{your-form-id}" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" required><br>
+                <label for="session">Preferred Session:</label><br>
+                <select id="session" name="session" required>
+                    <option value="private">Private Lesson</option>
+                    <option value="group">Group Coaching</option>
+                    <option value="junior">Junior Development</option>
+                    <option value="fitness">Fitness and Conditioning</option>
+                </select><br>
+                <label for="message">Additional Information:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Sign Up">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Neil Leitner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
